@@ -14,12 +14,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +35,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: black;
+}
+
+label {
+  display: inline;
+  align-items: left;
+  justify-content: left;
+  margin: 2px;
+  border: #61dafb;
+  font-size: calc(12px + 2vmin);
+  color: black;
+}
+
+
+input {
+  margin: 10px;
 }
