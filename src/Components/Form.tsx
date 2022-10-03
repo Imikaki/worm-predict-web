@@ -1,4 +1,5 @@
 import React from "react";
+import { ProcessInput } from "../Backend";
 import * as Options from "./Options";
 
 class Form extends React.Component {
@@ -20,12 +21,18 @@ class Form extends React.Component {
         });
     }
 
+    results = null;
+
     handleSubmit = (event: any) => {
         event.preventDefault();
         console.log(this.state);
         console.log(this.state.ChooseAge);
         alert("Submitted");
+        this.results = ProcessInput(this.state);
+        console.log(this.results);
     }
+
+
 
     render() {
         let {
